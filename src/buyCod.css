@@ -1,0 +1,44 @@
+.buy-cod-container {
+  text-align: center;
+}
+
+.buy-cod-full {
+  margin-top: 50px;
+}
+.buy-cod-message {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.go-to-home {
+  margin-top: 30px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 500px;
+  position: relative;
+  left: 5px;
+  font-family: Josefin Sans;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .buy-cod-container {
+    overflow-x: hidden;
+  }
+  .buy-cod-full {
+    font-size: 35px;
+    font-family: josefin sans;
+  }
+
+  .buy-cod-message {
+    font-size: 20px;
+  }
+
+  .go-to-home {
+    font-size: 14px;
+    padding-right: 100px;
+  }
+}

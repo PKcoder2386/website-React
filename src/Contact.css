@@ -1,0 +1,82 @@
+.contact {
+  display: flex;
+  position: relative;
+  left: 25%;
+  top: 50%;
+}
+.user1,
+.email,
+.number {
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+.form {
+  margin-top: -10px;
+}
+.information {
+  margin-left: 10%;
+}
+.information p,
+.mob {
+  text-decoration: none;
+  margin-left: 5px;
+  font-family: Josefin Sans;
+}
+
+span {
+  font-size: 20px;
+}
+h5 {
+  font-family: Josefin Sans;
+}
+.address .add-1 {
+  margin-top: -10px;
+}
+.submit {
+  margin-left: 1px;
+  padding: 10px 120px;
+  background-color: black;
+  color: white;
+  font-family: Josefin Sans;
+  text-transform: uppercase;
+}
+.user,
+.emails,
+.mobile {
+  position: absolute;
+  left: 10px;
+}
+#message {
+  width: 300px;
+  border: 1px solid black;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .contact {
+    width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -50px;
+    margin-top: -200px;
+  }
+
+  .information {
+    position: relative;
+    left: -20px;
+  }
+  .address {
+    position: relative;
+    bottom: 20px;
+  }
+  .add-1 {
+    display: inline;
+    position: relative;
+    bottom: 10px;
+  }
+}

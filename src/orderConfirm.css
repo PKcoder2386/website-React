@@ -1,0 +1,127 @@
+.order-history {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-history h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.invoice-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+.invoice-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+.order-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.invoice-body {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.invoice-left {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.invoice-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.invoice-right {
+  flex: 2;
+  min-width: 250px;
+}
+
+.invoice-right h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.invoice-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.invoice-table td {
+  padding: 5px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.invoice-table td:first-child {
+  color: #555;
+}
+
+.total-row td {
+  font-weight: bold;
+  border-top: 2px solid #ccc;
+  padding-top: 8px;
+}
+
+.invoice-address {
+  margin-top: 15px;
+  font-size: 14px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.invoice-address h4 {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.back-btn {
+  display: block;
+  margin: 30px auto 0;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: #0056b3;
+}

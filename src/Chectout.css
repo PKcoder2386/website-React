@@ -1,0 +1,207 @@
+
+.checkout-container {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  padding: 20px;
+  overflow-x: hidden;
+  border-radius: 8px;
+}
+.checkout-heading {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Bodoni Moda";
+  margin-bottom: 20px;
+  position: relative;
+  top: 5px;
+}
+.checkout-img {
+  height: 70px;
+  position: relative;
+  left: 280px;
+  border-radius: 5px;
+}
+.checkout-content {
+  display: flex;
+  gap: 15px;
+}
+.delivery-address {
+  margin-bottom: 15px;
+  margin-left: 10px;
+  font-family: Josefin Sans;
+}
+
+.country {
+  border-radius: 5px;
+  border: 0.1px solid gray;
+  padding: 5px 10px;
+  font-family: "Josefin Sans";
+  margin-left: 10px;
+  width: 370px;
+}
+
+.checkout-details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 320px;
+  top: -90px;
+  font-size: 18px;
+}
+.checkout-form {
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  left: 90px;
+}
+.checkout-address input {
+  border-radius: 5px;
+  border: 0.1px solid gray;
+  padding: 5px 10px;
+  font-family: "Josefin Sans";
+  margin-left: 10px;
+}
+.city,
+.state,
+.pincode {
+  width: 119px;
+  text-align: center;
+}
+.checkout-item {
+  position: relative;
+  left: 20px;
+  margin-bottom: -180px;
+}
+.checkout-items {
+  margin-top: 20px;
+}
+.checkout-subtotal {
+  display: inline;
+  position: relative;
+  right: 20px;
+  top: -70px;
+  left: 200px;
+  font-size: 16px;
+}
+.checkout-title {
+  font-size: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 25px;
+}
+.checkout-qty {
+  position: relative;
+  left: 25px;
+}
+.checkout-total {
+  font-size: 20px;
+  font-family: "Josefin Sans";
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: right;
+  position: relative;
+  left: 600px;
+  border: 1px solid black;
+  width: 150px;
+  text-align: center;
+}
+.checkout-price {
+  position: relative;
+  left: 25px;
+  bottom: 20px;
+}
+.checkout-qty-price {
+  display: inline;
+  width: 80px;
+}
+.payment-method {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: Josefin Sans;
+}
+.checkout-cod,
+.checkout-online {
+  text-align: center;
+  border: 0.1px solid gray;
+  width: 380px;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.cod,
+.online {
+  position: relative;
+  left: -120px;
+}
+.place-order {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 390px;
+}
+
+@media (max-width: 900px) {
+  .checkout-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .checkout-total {
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .checkout-container {
+    width: 420px;
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .checkout-heading {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: -4px;
+  }
+
+  .checkout-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .checkout-items {
+    margin-left: -300px;
+  }
+  .checkout-form {
+    position: relative;
+    left: 5px;
+  }
+  .checkout-qty,
+  .checkout-price {
+    position: relative;
+    left: -40px;
+  }
+
+  .checkout-qty-price {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .checkout-total {
+    font-size: 18px;
+    position: relative;
+    margin-left: -200px;
+    width: 200px;
+  }
+  .checkout-address {
+    width: 700px;
+  }
+}

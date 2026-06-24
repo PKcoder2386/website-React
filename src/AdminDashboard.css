@@ -1,0 +1,236 @@
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.admin-login-form {
+  background: #fdfdfd;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+.admin-login-form h2 { margin-bottom: 25px; color: #333; }
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.admin-login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.admin-dashboard-container { 
+    padding: 30px;
+     max-width: 1200px;
+      margin: 0 auto; 
+    }
+.admin-header {
+     display: flex;
+     justify-content: space-between;
+      align-items: center; 
+      border-bottom: 2px solid #eee; 
+      padding-bottom: 15px;
+       margin-bottom: 25px; }
+.logout-btn { 
+    background: #d9534f; 
+    color: white; 
+    padding: 8px 16px; 
+    border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     position: relative;
+     top: 10px;
+     right: 10px;
+     }
+.admin-order-card {
+     background: #fff;
+      border: 1px solid #ddd;
+       padding: 20px;
+        border-radius: 6px;
+         margin-bottom: 20px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+.order-card-header {
+     display: flex;
+      justify-content: space-between; 
+      align-items: center;
+       border-bottom: 1px dashed #eee;
+        padding-bottom: 10px; 
+        margin-bottom: 15px; 
+    }
+.status-badge { 
+    padding: 4px 10px;
+     border-radius: 20px;
+      font-size: 12px;
+       font-weight: bold;
+        background: #e0e0e0;
+     }
+.status-badge.online {
+     background: #d4edda;
+      color: #155724; 
+    }
+.status-badge.cod { 
+    background: #fff3cd;
+     color: #856404; 
+    }
+.order-card-body {
+     display: grid; 
+     grid-template-columns: 1fr 1fr;
+      gap: 20px; 
+    }
+.admin-item-row { 
+    display: flex; gap: 
+    15px; align-items: center;
+     margin-bottom: 10px;
+      background: #fafafa;
+       padding: 8px;
+        border-radius: 4px; 
+    }
+.admin-item-thumb { 
+    width: 50px;
+     height: 50px;
+      object-fit: cover;
+       border-radius: 4px; 
+    }
+.admin-total-amount {
+     margin-top: 15px; 
+     text-align: right; 
+     color: #333;
+      border-top: 1px solid #eee;
+       padding-top: 10px; 
+    }
+.order-date 
+{ 
+    font-size: 11px; 
+    color: #999;
+     margin-top: 15px;
+     text-align: right; 
+}
+.admin-item-thumb {
+    width: 60px ;
+    height: 60px ;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+.admin-item-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.dashboard{
+    position: relative;
+    top: 10px;
+    left: 250px;
+}
+.no-orders{
+    text-align: center;
+    font-family: Josefin sans;
+    font-weight: bolder;
+}
+ 
+.admin-login{
+  position: relative;
+  left: -50px;
+  top: 15px;
+}
+
+@media (max-width: 768px) { 
+  /* Switch grid to a single column for layout data */
+  .order-card-body {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  } 
+
+  /* Header adjustments for stacked elements if title is too long */
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    top: -60px;
+  }
+
+  .logout-btn {
+    align-self: flex-end; /* Keeps logout pushed to the right side if preferred */
+    position: relative;
+    top: -55px;
+    left: 20px;
+  }
+
+  .order-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Right-aligned text looks better left-aligned on mobile stack */
+  .admin-total-amount, 
+  .order-date {
+    text-align: left;
+  }
+
+  .dashboard{
+    position: relative;
+    left: -30px;
+    top: 50px;
+    font-size: 17px;
+  }
+  .status-badge {
+    position: relative;
+    left: 40px;
+  }
+  .orderId{
+    position: relative;
+    left: -80px;
+  }
+  .mark-paid-btn,.mark-delivered-btn{
+    position: relative;
+    left: 80px;
+  }
+  .delete-order-btn{
+    position: relative;
+    left: 80px;
+    top: 5px;
+  }
+  .Customer-info{
+    text-align: center;
+    position: relative;
+    right: 30px;
+  }
+  .Customer-details{
+    position: relative;
+    left: -80px;
+    
+  }
+  .admin-item-row{
+    position: relative;
+    left: -20px;
+  }
+  .order-date{
+    position: relative;
+    left: 100px;
+  }
+  .admin-login{
+    position: relative;
+    left: -50px;
+    top: 15px;
+  }
+  .online{
+    position: relative;
+    left: -40px;
+  }
+}

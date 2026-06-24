@@ -1,0 +1,79 @@
+.online-pay-container {
+  text-align: center;
+}
+.online-scan {
+  color: black;
+  top: 20px;
+  text-align: center;
+  position: relative;
+  left: -55px;
+}
+.online-pay-total {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.online-pay-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  position: relative;
+  bottom: 15px;
+}
+.online-pay-upload {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  cursor: pointer;
+  border: black 1px solid;
+  font-family: Josefin Sans;
+  position: relative;
+  bottom: 15px;
+}
+
+.online-pay-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 500px;
+  position: relative;
+  left: -10px;
+  bottom: 50px;
+  font-family: Josefin Sans;
+  text-transform: uppercase;
+}
+label {
+  position: relative;
+
+  font-family: Josefin Sans;
+}
+.online-pay-successful {
+  position: relative;
+  left: -40px;
+}
+@media (max-width: 600px) {
+  .online-pay-container {
+    width: 400px;
+    margin-left: 0px;
+    margin-left: 10px;
+    overflow-x: hidden;
+  }
+  /* .online-pay-total {
+    position: relative;
+    margin-left: -50px;
+  } */
+
+  .online-pay-image {
+    width: 300px;
+  }
+
+  .online-pay-button {
+    font-size: 14px;
+    text-align: center;
+    padding-right: 80px;
+  }
+}

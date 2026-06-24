@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Flamenco:wght@300;400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans+Hebrew:wght@100..800&family=Rubik+Mono+One&display=swap");
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  position: relative;
+  bottom: 10px;
+  left: 55px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+  left: 250px;
+  top: 15px;
+}
+.links {
+  text-decoration: none;
+  color: black;
+
+  font-family: Josefin Sans;
+}
+
+.links::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: black; /* Pick a color that matches your theme */
+  transition: width 0.3s ease;
+}
+.links:hover,
+.links:hover::after {
+  color: black;
+  width: 100%;
+}
+
+.dis {
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid rgb(196, 185, 185);
+  font-family: "Josefin Sans";
+  font-size: 12px;
+}
+.text-2 {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  left: -80px;
+  font-family: Josefin Sans;
+}
+.cart-logo img {
+  height: 25px;
+  position: relative;
+  left: 600px;
+  top: 10px;
+  object-fit: cover;
+  color: black;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.admin-nav{
+  position: relative;
+  left: 300px;
+  top: 2px;
+  font-family: Josefin sans;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .cart-logo img {
+    height: 23px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 600px) {
+  /* .dis {
+    border-bottom: 1px solid rgb(196, 185, 185);
+    width: 420px;
+  } */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .burger {
+    display: flex;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: -340px;
+    margin-right: 240px;
+    flex-direction: column;
+    
+  }
+
+  .links {
+    font-size: 14px;
+    margin-left: 13px;
+    font-weight: bolder;
+  }
+
+  .cart-logo img {
+    height: 22px;
+    margin-left: -240px;
+    position: relative;
+    top: -38px;
+  }
+  .dis {
+    border-bottom: 1px solid rgb(196, 185, 185);
+    width: 420px;
+  }
+  .text-2 {
+    width: 422px;
+  }
+  .admin-nav{
+    position: relative;
+    top: -1px;
+    left: -25px;
+    font-weight: bolder;
+    
+    
+   
+  }
+}
+
+/* Extra Small Phones (350px width) */
+@media (max-width: 380px) {
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    margin-left: -350px;
+  }
+
+  .links {
+    font-size: 13px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
