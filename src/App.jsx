@@ -36,7 +36,7 @@ function App() {
     {
       id: "2",
       title: "Black Forest Cake",
-      price: "1",
+      price: "20",
       image: "/cake2.png",
     },
     {
@@ -48,19 +48,19 @@ function App() {
     {
       id: "4",
       title: "Red Velvet Chocolate Cake",
-      price: "1,599",
+      price: "600",
       image: "/cake4.png",
     },
     {
       id: "5",
       title: "Chocolate Mousse Cake",
-      price: "1,299",
+      price: "1050",
       image: "/cake5.png",
     },
     {
       id: "6",
       title: "Red Velvet Chocolate Cake",
-      price: "1,599",
+      price: "1000",
       image: "/cake6.png",
     },
     {
@@ -90,7 +90,7 @@ function App() {
     {
       id: "11",
       title: " Delish Fresh Fruit Cake",
-      price: "1,399",
+      price: "700",
       image: "/cake11.png",
     },
     {
@@ -108,19 +108,19 @@ function App() {
     {
       id: "14",
       title: "Kit Kat Chocolate Cake",
-      price: "1,999",
+      price: "1200",
       image: "/cake14.png",
     },
     {
       id: "15",
       title: "Rainbow Rose Cake",
-      price: "1,899",
+      price: "1300",
       image: "/cake15.png",
     },
     {
       id: "16",
       title: "Designer Rose Swirl Cake | Heart",
-      price: "1,349",
+      price: "900",
       image: "/cake16.png",
     },
   ];
