@@ -292,4 +292,24 @@ button .btn-2 {
   .img .home-img {
     width: 422px;
   }
+  .address{
+    position: relative;
+    top: 10px;
+  }
+}
+@media (max-width: 380px){
+   small{
+    position: relative;
+    top:-20px;
+   }
+   .address{
+    position: relative;
+    top: 2px;
+      font-size: 12px;
+       
+   }
+   .direction{
+    position: relative;
+    top: -30px;
+   }
 }

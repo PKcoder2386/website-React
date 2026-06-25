@@ -63,7 +63,7 @@ function Home({ products }) {
         <img src="./backCake1.png" className="location-img" alt="" />
         <div className="location">
           <h3>OUR RETAIL STORE</h3>
-          <p>
+          <p className="address">
             Mathura Colony, Nakhate vasti <br />
             Datta Krupa Building, Floor No.1 <br />
             <span>Pune, Maharashtra</span>
